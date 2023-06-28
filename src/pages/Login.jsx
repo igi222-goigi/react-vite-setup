@@ -1,3 +1,10 @@
+import { useAuth } from "../context/AuthContext";
+
 export const Login = () => {
-  return <h1>Login Page</h1>;
+  // const { setIsLogin } = useAuth();
+  // setIsLogin(true);
+  const handleLogin = () => {
+    // setIsLogin(true);
+  };
+  return <button onClick={handleLogin}>Login</button>;
 };
